@@ -1,0 +1,25 @@
+div table tr td button {
+  background-color: #4d4d4d;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  cursor: pointer;
+  width: 200px;
+}
+div table tr td input
+{
+	background-color: #008000;
+	border: none;
+	color: #000000;
+	padding: 15px 32px;
+	text-align: left;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 50px;
+	margin: 4px 2px;
+	cursor: :pointer;
+	width: 92%;
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="logic.js"></script>
+     <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body onkeypress="kp()">
+	<header></header>
+	<div>
+		<table border="2" cellpadding="2" cellspacing="2" align="center">
+			<tr>
+				<td colspan="4"><input disabled id="out" placeholder="0" /></td>
+			</tr>
+			<tr>
+				<td><button onclick="ac()">AC</button></td>
+				<td><button onclick="del()">DEL</button></td>
+				<td><button onclick="document.getElementById('out').value+='&';na()">&</button></td>
+				<td><button onclick="document.getElementById('out').value+='/';na()">/</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="document.getElementById('out').value+='7'">7</button></td>
+				<td><button onclick="document.getElementById('out').value+='8'">8</button></td>
+				<td><button onclick="document.getElementById('out').value+='9'">9</button></td>
+				<td><button onclick="document.getElementById('out').value+='*';na()">*</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="document.getElementById('out').value+='4'">4</button></td>
+				<td><button onclick="document.getElementById('out').value+='5'">5</button></td>
+				<td><button onclick="document.getElementById('out').value+='6'">6</button></td>
+				<td><button onclick="document.getElementById('out').value+='-';na()">-</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="document.getElementById('out').value+='1'">1</button></td>
+				<td><button onclick="document.getElementById('out').value+='2'">2</button></td>
+				<td><button onclick="document.getElementById('out').value+='3'">3</button></td>
+				<td><button onclick="document.getElementById('out').value+='+';na()">+</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="document.getElementById('out').value+='%';na()">%</button></td>
+				<td><button onclick="document.getElementById('out').value+='0'">0</button></td>
+				<td><button onclick="document.getElementById('out').value+='.';na()">.</button></td>
+				<td><button id="eql" onclick="document.getElementById('out').value=eval(document.getElementById('out').value)">=</button></td>
+			</tr>
+		</table>
+	</div>
+	<footer></footer>
+</body></html>
